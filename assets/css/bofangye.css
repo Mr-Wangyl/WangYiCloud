@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    height: 100%;
+}
+html {
+    font-size: 100px;
+}
+.bg {
+    height: 100%;
+    background:url("../images/timg.jpg") no-repeat center;
+    background-size: cover; /*!!!!!*/  
+    z-index: -1;
+    filter: blur(5px);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    top: -667px;
+}
+.header {
+    height: .5rem;
+    border-bottom: 1px solid #bababa;
+    position: relative;
+}
+.header h4 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    margin-top: .05rem;
+}
+.header h5 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    margin-top: .05rem;
+}
+.header span{
+    position: absolute;
+    font-size: 20px;
+    top:12px;
+    left: .2rem;
+    color: white;
+}
+.main {
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
+}
+.gan img {
+    width: 1rem;
+    height: 1.5rem;
+    left: 50%;
+    z-index: 3;
+    position: absolute;  
+}
+.outline {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 1.6rem;
+    margin: 15% auto;  
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 0;
+}
+.outline .heiquan img{
+    width: 80%;
+    height: auto;
+    margin: 10px 10px;
+    z-index: 1;
+    position: absolute;
+}
+.outline .heiquan .CD img{
+    width: 53%;
+    height: auto;
+    border-radius: 160px;
+    margin: 59px 60.5px;
+    z-index: 2;
+}
+.div1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    top: -9px;
+    background: white;
+}
+.div2 {
+    width: 300px;
+    height: 2px;
+    background: gray;
+    position: relative;
+    margin: 50px auto 0;
+    z-index: 5;
+}
