@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="./assets/js/jquery-1.10.2.js"></script>
+  
+    <title>a页面</title>
+    <script>
+        $(function(){
+             name = $("#name").text();
+             age = $("#age").text();
+
+            $("#btn").on("click",function(){
+               jump1();
+            });
+        });
+
+        function jump1(){
+            var url = "./play.html?ul=/server/data/1/1.json&id=2";//此处拼接内容
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+   <div id="name">wey</div>
+   <div id="age">20</div>
+   <button id="btn">跳转</button>
+</body>
+</html>

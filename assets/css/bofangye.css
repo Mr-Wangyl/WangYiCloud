@@ -14,14 +14,14 @@ html {
     background:url("../images/timg.jpg") no-repeat center;
     background-size: cover; /*!!!!!*/  
     z-index: -1;
-    filter: blur(5px);
+    filter: blur(.05rem);
 }
 .wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
     position: relative;
-    top: -667px;
+    top: -6.67rem;
 }
 .header {
     height: .5rem;
@@ -29,14 +29,14 @@ html {
     position: relative;
 }
 .header h4 {
-    font-size: 16px;
+    font-size: .16rem;
     text-align: center;
     line-height: 1;
     color: white;
     margin-top: .05rem;
 }
 .header h5 {
-    font-size: 16px;
+    font-size: .16rem;
     text-align: center;
     line-height: 1;
     color: white;
@@ -44,8 +44,8 @@ html {
 }
 .header span{
     position: absolute;
-    font-size: 20px;
-    top:12px;
+    font-size: .2rem;
+    top:.12rem;
     left: .2rem;
     color: white;
 }
@@ -64,39 +64,77 @@ html {
 .outline {
     width: 3.2rem;
     height: 3.2rem;
-    border-radius: 1.6rem;
-    margin: 15% auto;  
+    border-radius: 50%;
+    margin: .5rem auto;  
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 0;
+    animation: circling 20s infinite linear;
 }
 .outline .heiquan img{
-    width: 80%;
+    width: 3rem;
     height: auto;
-    margin: 10px 10px;
+    margin: .1rem .1rem;
     z-index: 1;
     position: absolute;
 }
 .outline .heiquan .CD img{
-    width: 53%;
+    width: 2rem;
     height: auto;
-    border-radius: 160px;
-    margin: 59px 60.5px;
+    border-radius: 50%;
+    margin: .58rem .595rem;
     z-index: 2;
 }
 .div1 {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: .2rem;
+    height: .2rem;
+    border-radius: 50%;
     position: absolute;
-    left: 0px;
-    top: -9px;
+    left: 0;
+    top: -.09rem;
     background: white;
 }
 .div2 {
-    width: 300px;
-    height: 2px;
+    width: 3rem;
+    height: .02rem;
     background: gray;
     position: relative;
-    margin: 50px auto 0;
+    margin: .5rem auto 0;
     z-index: 5;
+}
+.play {
+    margin: .5rem auto;
+}
+.icon-previous2 {
+    font-size: .5rem;
+    color: white;
+    position: relative;
+    left: -.35rem;
+}
+.icon-pause2 {
+    font-size: .45rem;
+    color: white;
+    /* position: absolute; */
+}
+.icon-next2 {
+    font-size: .5rem;
+    color: white;
+    position: relative;
+    left: .35rem;
+}
+.icon-play3 {
+    font-size: .45rem;
+    color: white;
+}
+
+
+
+@keyframes circling{
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
 }
