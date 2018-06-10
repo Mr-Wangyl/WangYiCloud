@@ -19,35 +19,35 @@ body {
     flex-direction: column;
     height: 100%;
     position: relative;
-    top: -6.67rem;
+    top: -13.34rem;
     z-index: inherit;
 
 }
 .header {
-    height: .5rem;
+    height: 1rem;
     border-bottom: 1px solid #bababa;
     position: relative;
     z-index: 4;
 }
 .header h4 {
-    font-size: .16rem;
+    font-size: .32rem;
     text-align: center;
     line-height: 1;
     color: white;
-    margin-top: .05rem;
+    margin-top: .1rem;
 }
 .header h5 {
-    font-size: .16rem;
+    font-size: .32rem;
     text-align: center;
     line-height: 1;
     color: white;
-    margin-top: .05rem;
+    margin-top: .1rem;
 }
 .header span{
     position: absolute;
-    font-size: .2rem;
-    top:.12rem;
-    left: .2rem;
+    font-size: .4rem;
+    top:.24rem;
+    left: .4rem;
     color: white;
 }
 .main {
@@ -57,26 +57,26 @@ body {
 }
 
 .gan {
-    width:1.5rem;
-    height: 1.7rem;
+    width:3rem;
+    height: 3.4rem;
     position: absolute;
-    top:.5rem;
+    top:1rem;
     left: 50%;
     z-index: 3;
     overflow: hidden;
 }
 .gan img {
     display: block;
-    margin-top:-0.15rem;
+    margin-top:-0.3rem;
     width: 65%;
     height: 85%;
     
 }
 .outline {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 6.4rem;
+    height: 6.4rem;
     border-radius: 50%;
-    margin: .5rem auto;  
+    margin: 1rem auto;  
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 0;
    
@@ -85,58 +85,58 @@ body {
     animation: circling 20s infinite linear;  
 }
 .outline .heiquan img{
-    width: 3rem;
+    width: 6rem;
     height: auto;
-    margin: .1rem .1rem;
+    margin: .2rem .2rem;
     z-index: 1;
     position: absolute;
 }
 .outline .heiquan .CD img{
-    width: 2rem;
+    width: 4rem;
     height: auto;
     border-radius: 50%;
-    margin: .58rem .595rem;
+    margin: 1.16rem 1.19rem;
     z-index: 2;
 }
 .div1 {
-    width: .2rem;
-    height: .2rem;
+    width: .4rem;
+    height: .4rem;
     border-radius: 50%;
     position: absolute;
     left: 0;
-    top: -.09rem;
+    top: -.18rem;
     background: white;
 }
 .div2 {
-    width: 3rem;
-    height: .02rem;
+    width: 6rem;
+    height: .04rem;
     background: gray;
     position: relative;
-    margin: .5rem auto 0;
+    margin: 1rem auto 0;
     z-index: 5;
 }
 .play {
-    margin: .5rem auto;
+    margin: 1rem auto;
 }
 .icon-previous2 {
-    font-size: .5rem;
+    font-size: 1rem;
     color: white;
     position: relative;
-    left: -.35rem;
+    left: -.7rem;
 }
 .icon-pause2 {
-    font-size: .45rem;
+    font-size: 1rem;
     color: white;
     /* position: absolute; */
 }
 .icon-next2 {
-    font-size: .5rem;
+    font-size: 1rem;
     color: white;
     position: relative;
-    left: .35rem;
+    left: .7rem;
 }
 .icon-play3 {
-    font-size: .45rem;
+    font-size: .9rem;
     color: white;
 }
 
