@@ -6,15 +6,13 @@
 body {
     height: 100%;
 }
-html {
-    font-size: 100px;
-}
+
 .bg {
     height: 100%;
     background:url("../images/timg.jpg") no-repeat center;
     background-size: cover; /*!!!!!*/  
     z-index: -1;
-    filter: blur(.05rem);
+    filter: blur(.1rem);
 }
 .wrapper {
     display: flex;
@@ -22,11 +20,14 @@ html {
     height: 100%;
     position: relative;
     top: -6.67rem;
+    z-index: inherit;
+
 }
 .header {
     height: .5rem;
     border-bottom: 1px solid #bababa;
     position: relative;
+    z-index: 4;
 }
 .header h4 {
     font-size: .16rem;
@@ -54,12 +55,22 @@ html {
     overflow-y: auto;
     position: relative;
 }
-.gan img {
-    width: 1rem;
-    height: 1.5rem;
+
+.gan {
+    width:1.5rem;
+    height: 1.7rem;
+    position: absolute;
+    top:.5rem;
     left: 50%;
     z-index: 3;
-    position: absolute;  
+    overflow: hidden;
+}
+.gan img {
+    display: block;
+    margin-top:-0.15rem;
+    width: 65%;
+    height: 85%;
+    
 }
 .outline {
     width: 3.2rem;
@@ -68,7 +79,10 @@ html {
     margin: .5rem auto;  
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 0;
-    animation: circling 20s infinite linear;
+   
+}
+.run{
+    animation: circling 20s infinite linear;  
 }
 .outline .heiquan img{
     width: 3rem;
@@ -126,7 +140,15 @@ html {
     color: white;
 }
 
+.moveon{
+    animation: movingOn 1s  both;
+    transform-origin:.15rem .15rem;
+}
 
+.moveoff{
+    animation: movingOff 1s  both;
+    transform-origin:.15rem .15rem;
+}
 
 @keyframes circling{
     0% {
@@ -136,5 +158,31 @@ html {
     100% {
         -webkit-transform: rotate(1turn);
         transform: rotate(1turn);
+    }
+}
+
+
+
+@keyframes movingOn{
+    0% {
+        -webkit-transform: rotate(0deg);
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+}
+
+
+@keyframes movingOff{
+    0% {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }

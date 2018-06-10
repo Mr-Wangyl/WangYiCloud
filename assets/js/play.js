@@ -9,16 +9,16 @@ function init(){
     var str = sp(location.href);  //ul=\server\data\1\1.json&id=1
     var str1 = str.split('&')[0].split('=')[1];
     id = str.split('&')[1].split('=')[1];
-    console.log(str1)
+    // console.log(str1)
 
     var num = str1.split('/')[4];
 
-    console.log(num)
+    // console.log(num)
     
     var musicNum1 = num.split('.')[0];
     var listNum1 =  str1.split('/')[3];
-    console.log(musicNum1)
-    console.log(listNum1)
+    // console.log(musicNum1)
+    // console.log(listNum1)
     rego();
     $.ajax({
         type:'GET',
@@ -56,7 +56,7 @@ function addMusic(data){
     media.autoplay = true;
     // console.log(str)
     timer = setInterval(function(){
-        console.log(media.currentTime/media.duration*$('.div2').outerWidth());
+        // console.log(media.currentTime/media.duration*$('.div2').outerWidth());
         $('.div1').css({
             "left":media.currentTime/media.duration*$('.div2').outerWidth()
         })
@@ -88,11 +88,22 @@ function bindStatus(media){
              $(this).removeClass('icon-pause2');
              media.pause();
              flag = false;
+             $('.wrapper .run').css({
+                'animationPlayState':'paused'
+             });
+             $('.gan img').removeClass('moveoff');
+             $('.gan img').addClass('moveon');
+             
         }else{
              $(this).removeClass('icon-play3');
              $(this).addClass('icon-pause2');
              media.play();
              flag = true;
+             $('.wrapper .outline').css({
+                'animationPlayState':'running'
+             });
+             $('.gan img').removeClass('moveon');
+             $('.gan img').addClass('moveoff');
         }
      });
 }
@@ -190,8 +201,8 @@ function bindSlider(){
             return;
         }
         var x =  e.touches[0].pageX -fpo;
-        console.log(e.touches[0].pageX)
-        console.log(fpo)
+        // console.log(e.touches[0].pageX)
+        // console.log(fpo)
         $(this).css({
             'left': x
         });
@@ -226,7 +237,7 @@ function bindEnde(data){
 
 
 function bindTouchSl(){
-    console.log('hello')
+    // console.log('hello')
     $('.div2')[0].addEventListener("touchstart", function(e) {
         console.log('hello')
         //父元素x轴位置
@@ -235,7 +246,7 @@ function bindTouchSl(){
         var fw =  div.parent().outerWidth();
         var fpo = div.parent().offset().left;
         var x =  e.touches[0].pageX -fpo;
-        console.log(x)
+        // console.log(x)
         media.currentTime = media.duration*(x/fw);
         $('.div1').css({
             'left': x
