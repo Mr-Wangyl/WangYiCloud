@@ -3,14 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>播放页面</title>
+
+    <script>
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 750) deviceWidth = 750;
+    document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    console.log( deviceWidth / 7.5 + 'px');
+    </script>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/swiper-4.2.6.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/bofangye.css">
+
+
+
 </head>
 
 <body>
@@ -24,7 +35,7 @@
         <div class="gan">
             <img src="./assets/images/杆_副本.png" alt="">
         </div>
-        <div class="outline">
+        <div class="outline run">
             <div class="heiquan">
                 <img src="./assets/images/circle.png" alt="">
                 <div class="CD">
@@ -36,8 +47,22 @@
         <div class="div2">
             <div class="div1"></div>
         </div>
+        <div class="play">
+            <span class="pre icon-previous2"></span>
+            <span class="status icon-pause2"></span>
+              <!-- 播放的按钮  -->
+              <!-- <span class="icon-play3"></span>  -->
+            <span class="next icon-next2"></span>
+          
+        </div>
         </main>
     </section>
+    <script src="./assets/js/jquery-1.10.2.js"></script>
+    <script src="./assets/js/play.js"></script>
+    <script>
+        
+        init();
+    </script>
 </body>
 
 </html>

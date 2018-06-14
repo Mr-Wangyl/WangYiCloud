@@ -1,0 +1,110 @@
+
+.header{
+    width: 100%;
+    height: 0.95rem;
+    background: white;
+}
+.header .hr_noDoTop{
+    height:0.59rem;
+    background:red;
+}
+.main{
+    flex: 1;
+    overflow-y:auto;
+}
+.main>.hr_lunbo{
+    height: 1.46rem;
+    width: 100%;
+}
+.myDot span{
+    background: #dd3b39;
+}
+.swiper-container {
+    height: 1.46rem;
+    width: 100%;
+}
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+.main .hr_iconBox{
+    height: 1rem;
+    border-top:1px solid #f2f3f5;
+    border-bottom:1px solid #f2f3f5;
+}
+.main .hr_iconBox>ul{
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px solid gray; 
+}
+.main .hr_iconBox>ul>li{
+    text-align: center;
+    line-height: 13;
+    font-size: 12px;
+    flex: 0.25;
+    float: left;
+    height: 1rem;
+    position: relative;
+    
+}
+.main .hr_iconBox>ul>li>img{
+    position: absolute;
+    left: 0.2rem;
+    top:.14rem;
+}
+.main .hr_iconBox>ul>li>h4{
+    height: 1rem;
+}
+.main .hr_musicList>ul>li{
+    height: 3.96rem;
+    margin-top:.08rem;
+}
+.main .hr_musicList li div{
+    width: 100%;
+    padding-top:.22rem;
+}
+.main .hr_musicList li>div>a{
+    text-decoration: none;
+    color: black;
+}
+.main .hr_musicList li div p{
+    width: 100%;
+    height:.15rem;
+    padding-left: .08rem;
+    background: white;
+    border-left:.01rem solid rgba(0, 0, 0, 0);
+}
+.main .hr_musicList li div p:hover{
+    border-left:.01rem solid #da6158 ;
+}
+.main .hr_musicList li div ol{
+    display: flex;
+    margin-top:.13rem;
+    margin-bottom: .13rem;
+}
+
+.main .hr_musicList li div ol li{
+    float: left;
+    flex:0.33;
+    height: 1.78rem;
+}
+.main .hr_musicList li div ol li .music-box{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration:none;
+}
+.main .hr_musicList li div ol li .music-box p{
+    color: black;
+}
+.main .hr_musicList li div ol li img{
+    width: 100%;
+    height: auto;
+}
+.main .hr_musicList li div ol li:nth-child(2){
+    margin-left:.04rem;
+    margin-right:.04rem;
+}
+.main .hr_musicList li div ol li p{
+    font-size:12px;
+}
