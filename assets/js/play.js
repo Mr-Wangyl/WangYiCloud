@@ -6,14 +6,14 @@ var timer = null;
 var id = 1;
 function init(){
     
-    var str = sp(location.href);  //ul=\server\data\1\1.json&id=1
+    var str = sp(location.href);  //ur=\server\data\1\1.json&id=1
     var str1 = str.split('&')[0].split('=')[1];
     id = str.split('&')[1].split('=')[1];
-    // console.log(str1)
+    console.log(str1)
 
     var num = str1.split('/')[4];
 
-    // console.log(num)
+    console.log(num)
     
     var musicNum1 = num.split('.')[0];
     var listNum1 =  str1.split('/')[3];

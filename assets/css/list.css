@@ -1,0 +1,87 @@
+﻿li{
+    display: block;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.header {
+    height: 1.15rem;
+    background: rgb(213, 60, 52);
+    border-bottom: 1px solid #bababa;
+    overflow: hidden;
+}
+.header h4 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+}
+.icon-chevron-left {
+    margin-top: .4rem; 
+    margin-left: .4rem;
+    display: block;
+    font-size: 24px;
+    color: rgb(250, 249, 245); 
+}
+.section {
+    height: .75rem;
+}
+.section li {
+    float: left;
+    line-height: .75rem;
+    margin-left: .4rem;
+    margin-right: .4rem;
+    font-family: '微软雅黑';
+    font-size: 16px;
+}
+.selected {
+    border-bottom: 2px solid rgb(225, 58, 52);
+}
+/* .main {
+    overflow-y:auto;
+    overflow-x:hidden;
+} */
+.main .list-pic {
+    height: 3rem;
+    display: block;
+}
+.main .songs {
+    height: 1rem;
+    border-top: 1px solid grey; 
+    display: block;
+    position: relative;
+    margin-left: .2rem;
+    /* margin-top: .6rem;  */
+}
+.songs img {
+    width: .7rem;
+    height: .7rem;
+    position: absolute;
+    top: 50%; 
+    margin-top: -.35rem;
+}
+.songs h5 {
+    display: block;
+    margin-left: 1rem;
+    margin-top: .15rem;
+    color: rgb(36, 36, 36);
+    font-size: 16px;
+}
+.songs h4 {
+    display: block;
+    margin-left: 1rem;
+    margin-top: .1rem;
+    color: rgb(125, 125, 125);
+    font-size: 12px;
+}
+.footer {
+    z-index: 100;
+    bottom: 0rem;
+    position: absolute;
+    width: 7.5rem;
+    height: .9rem;
+    background: rgb(55,55,55);
+}

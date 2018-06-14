@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/list.css">
+</head>
+<body>
+    <header class="header">
+        <span class="icon-chevron-left"></span>        
+    </header>
+    <section class="section">
+        <li data-cid="1",class="selected">推荐</li>
+        <li data-cid="2">华语</li>
+        <li data-cid="3">欧美</li>
+        <li data-cid="4">韩国</li>
+    </section>
+    <main class="main">
+        <div>
+            <img src="" alt="" class="list-pic">
+        </div>
+        <div>
+            <img src="" alt="" class="list-pic">
+        </div>
+        <div>
+            <img src="" alt="" class="list-pic">
+        </div>
+        <div>
+            <img src="" alt="" class="list-pic">
+        </div>
+    </main>
+    <footer class="footer">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </footer>
+    <script src="./assets/js/jquery-1.10.2.js"></script>
+    <script src="./assets/js/tab.js"></script>
+    <script>    
+        function UrlSearch() { //获取url后参数
+            var name,value;
+            var str=location.href; //取得整个地址栏
+            var num=str.indexOf("?")
+            str=str.substr(num+1); //取得所有参数   stringvar.substr(start [, length ]
+            var arr=str.split("&"); //各个参数放到数组里
+            for(var i=0;i < arr.length;i++){
+                    num=arr[i].indexOf("=");
+                    if(num>0){
+                        name=arr[i].substring(0,num);
+                        value=arr[i].substr(num+1);
+                        this[name]=value;
+                    }
+            }
+        }
+        UrlSearch()
+        var data= ({
+            aLiList: $('.section li'),
+            aDivList: $('.main').children('div'),
+            evType: 'onclick',
+            curIndex: listId,
+            callback: function(index){
+                
+            }
+        })
+        tab(data)
+    </script>
+
+
+</body>
+</html>
