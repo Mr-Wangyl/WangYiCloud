@@ -130,9 +130,7 @@ var tab=(function(){
         params.evType=options.evType||'onclick';
     }
       function goBack(){
-        console.log('hello')
         $('.header span').on('touchend',function(){
-             console.log('hello')
             window.location.href = './index.html';
         }) 
     }

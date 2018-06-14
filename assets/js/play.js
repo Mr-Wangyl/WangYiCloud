@@ -9,11 +9,11 @@ function init(){
     var str = sp(location.href);  //ur=\server\data\1\1.json&id=1
     var str1 = str.split('&')[0].split('=')[1];
     id = str.split('&')[1].split('=')[1];
-    console.log(str1)
+    // console.log(str1)
 
     var num = str1.split('/')[4];
 
-    console.log(num)
+    // console.log(num)
     
     var musicNum1 = num.split('.')[0];
     var listNum1 =  str1.split('/')[3];
@@ -31,8 +31,8 @@ function init(){
        addEle(data);
        addMusic(data);
     }).fail(function(err){
-        // alert(err)
-        console.log(123)
+        alert(err)
+        // console.log(123)
     });
 
 }
@@ -239,7 +239,7 @@ function bindEnde(data){
 function bindTouchSl(){
     // console.log('hello')
     $('.div2')[0].addEventListener("touchstart", function(e) {
-        console.log('hello')
+        // console.log('hello')
         //父元素x轴位置
         var div = $('.div1');
         var fp = div.position().left;
