@@ -23,7 +23,7 @@ function init(){
     $.ajax({
         type:'GET',
         cache:false,
-        url:'.'+str1,
+        url:str1,
         dataType:'json'
     }).done(function(data){
        musicNum = musicNum1;
